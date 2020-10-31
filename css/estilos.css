@@ -1,0 +1,136 @@
+#tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla thead{
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+th, td{
+    padding: 0.5%;
+    text-align: left;
+}
+#id{
+    visibility: hidden;
+}
+#divForm{
+    top: 15%;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    border-radius: 10px;
+    background-color: rgb(212, 209, 209);
+    position: fixed;
+}
+#form{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 1%;
+    left: 12%;
+    right: 1%;
+    bottom: 1%;
+    margin: auto;
+}
+#btn, #btnModificar, #btnEliminar, #btnCancelar {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2% ;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+#btnCancelar{
+    background-color:red;
+}
+#btn{
+    background-color: blue;
+}
+#btnEliminar {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2% ;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+tbody tr:nth-child(odd){
+    background: #dfbbbb;
+    color: black;
+}
+ 
+tbody tr:nth-child(even){
+    background: #FFFFFF;
+    color: #000000;
+}
+#divBtnMas{
+    width: 100%;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border-color: black;
+}
+#btnMas{
+    position: relative;
+    float:right;
+    border-radius: 100%;
+    padding: 1%;
+    background-color:green;
+    color: white;
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+*,*:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#contenedor_spinner{
+    visibility: hidden;
+    background-color: rgba(250, 240, 245, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    z-index: 10000;
+}
+
+#spinner{
+    border: 15px solid #ccc;
+    border-top-color: #F4266A;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -0-animation: girar 1.5s linear infinite;
+
+}
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
+
